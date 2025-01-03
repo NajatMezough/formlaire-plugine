@@ -1,0 +1,179 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+    background-color: rgb(231, 233, 233);
+  
+h2 {
+    width: 470px;
+    height: 70px;
+    font-size: 1,5em;
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 1px;
+    background: #fdf903;
+    border-radius: 3px;
+    box-shadow: 0px 12px 22px #aaaaaa;
+ }
+.Contact-box {
+    position: relative;
+    width: 590px;
+    height: 600px;
+    background: #ffffff;
+    border-radius: 6px;
+    padding-bottom: 141px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.continar{
+    display: flex;
+    gap: 11px;
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 13px 0; 
+    
+}
+
+.input-box .input-line {
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 2.5px;
+    background: #beb7b7;
+    transition: .5s ease;
+}
+
+.input-box label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #beb7b7;
+    pointer-events: none;
+    transition: .5s ease;
+}
+
+.input-box input:focus~label,
+.input-box input:valid~label {
+    top: -5px;
+    font-size: 14px;
+}
+.input-box input:focus~.input-line {
+    background-color: #f3ef05;
+}
+.input-box textarea:focus~label,
+.input-box textarea:valid~label {
+    top: -5px;
+    font-size: 14px;
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: #222020;
+    padding: 0 35px 0 5px;
+    transition: .5s ease;
+}
+
+.Container .title {
+    position: relative;
+    color: #fffffc;
+}
+.Container .title::before {
+    position: absolute;
+    content: 'Votre projet';
+    top: -20px;
+    left: -490px;
+    color: #eafc4e;
+    background-color: #ffffff;
+    width: 116px;
+    height: 22px;
+    text-align: center;
+    font-size: 15px;
+}
+.Container .title::before {
+    position: absolute;
+    content: 'Votre Design';
+    top: -20px;
+    left: -490px;
+    color: #eafc4e;
+    background-color: #ffffff;
+    width: 116px;
+    height: 22px;
+    text-align: center;
+    font-size: 15px;
+}
+.Container .icon{
+    position: relative;
+    font-size: 12px;
+    color: rgb(255, 30, 0);
+    left:-33px;
+    pointer-events: none;
+    padding: 19px 9px 15px 9px;
+}
+
+.Container ul{
+    position:absolute;
+    margin-top:4px;
+    list-style: none;
+    width: 500px;
+    height: 126px;
+    border-bottom: 2px solid rgb(251, 255, 0);
+    border-radius: 3px;
+}
+.Container ul li{
+    padding-left: 15px;
+    height: 33px;
+    transition: 0,3s ease;
+}
+
+.Container ul li:hover{
+    background-color: rgb(248, 237, 74);
+    color: white;
+    border-radius: 2px;
+}
+
+.Container select{
+    border: solid 2px #beb7b7;
+    padding: 11px 11px;
+    color: #222020;
+}
+
+button {
+    width: 30%;
+    height: 40px;
+    background: #e9f543;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #fafafa;
+    font-weight: 500;
+    transition: .5s ease;
+    margin-left: 72%;
+    margin-top: 118px;
+}

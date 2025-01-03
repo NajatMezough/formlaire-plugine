@@ -1,0 +1,82 @@
+
+<div class="login-light">
+       
+    <div class="Contact-box">
+    
+      <form action="#" >
+        <div> 
+            <h2 titre="titre">Contact nous</h2>
+        </div>
+        <div class="continar">
+            <div class="input-box">
+               
+                <input type="name" id="name" required>
+                <label>Name</label>
+                <div class="input-line"></div>
+            </div>
+            <div class="input-box">
+               
+                <input type="prenome" id="prenome" required>
+                <label>Prenome</label>
+                <div class="input-line"></div>
+            </div>
+           
+        </div>
+        <div class="input-box">
+           
+            <input type="number"  id="number" required>
+            <label>Numéro</label>
+            <div class="input-line"></div>
+        </div>
+        
+        <div class="input-box">
+            <input type="email" id="email" required>
+            <label>Email</label>
+            <div class="input-line"></div>
+        </div>
+        
+
+        <main class="Container">                
+            <select class="input-box" name="cars" id="cars">
+                <option value="Creation des site web">Creation des site web</option>
+                <option value="Grafique design">Grafique design</option>
+                <option value="Mareting automatisation">Mareting automatisation </option>
+                <option value="Optimisation de SEO">Optimisation de SEO</option>
+            </select> 
+            <span class="title"></span>
+        </main>
+        <div class="input-box">
+            <input type="text" id="message" required>
+            <label>Message</label>
+            <div class="input-line"></div>
+        </div>
+
+        <button type="submit">Submit</button>
+        
+    </form>
+</div>
+</div>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script>
+  document.querySelector('#inscrire').onclick = function(){
+      var password = document.querySelector('#password').value,
+      confirmpassword = document.querySelector('#confirmpassword').value,
+      
+      name = document.querySelector('#name').value,
+      prenome = document.querySelector('#prenome').value,
+      number = document.querySelector('#number').value,
+      email = document.querySelector('#email').value,
+      dep = document.querySelector('#dep').value,
+      message = document.querySelector('#message').value;
+     if(name=="" || prename=="" || number=="" || email=="" || nom=="" || message=="" ){
+         alert("vérifier que vous avez bien remplis tous les champs !");
+         return false;
+     }
+     else if(password !=confirmpassword ){
+         alert("le mot de passe ne correspond pas réessayez ! ");
+         return false;
+     }
+     else return true;
+  }
